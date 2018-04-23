@@ -30,6 +30,12 @@ cat << usg
 
   # Example - Calculate debt for different severity types issues for project key devtools-perftest-newjenkins in SonarQube QA
   ./calculate_debt_per_severity_type.sh -s "https://sonar-qa.markit.partners" -k "devtools-perftest-newjenkins" -t "************************"
+  
+  Sample Output:
+  Total debt time for MAJOR is .30347222222222222222 days
+  Total debt time for MINOR is .13263888888888888888 days
+  Total debt time for BLOCKER is 0 days
+  Total debt time for CRITICAL is .09583333333333333333 days
 
 usg
 }
