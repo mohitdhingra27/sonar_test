@@ -12,7 +12,7 @@ RUN yum -y install wget
 	
 # Install maven
 RUN cd /tmp \
-	&& wget ftp://mirror.reverse.net/pub/apache/maven/maven-3/${MAVEN_INSTALL_VERSION}/binaries/apache-maven-${MAVEN_INSTALL_VERSION}-bin.tar.gz \
+	&& wget http://mirror.reverse.net/pub/apache/maven/maven-3/${MAVEN_INSTALL_VERSION}/binaries/apache-maven-${MAVEN_INSTALL_VERSION}-bin.tar.gz \
 	&& tar -xzf apache-maven-${MAVEN_INSTALL_VERSION}-bin.tar.gz -C /opt \
 	&& ln -s /opt/apache-maven-${MAVEN_INSTALL_VERSION} /opt/apache-maven
 	
