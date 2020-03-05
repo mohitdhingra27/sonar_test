@@ -8,6 +8,8 @@ RUN yum -y update \
 	&& yum -y install java-1.8.0-openjdk-devel \
 	&& yum -y clean all
 	
+RUN yum -y install wget	
+	
 # Install maven
 RUN cd /tmp \
 	&& wget ftp://mirror.reverse.net/pub/apache/maven/maven-3/${MAVEN_INSTALL_VERSION}/binaries/apache-maven-${MAVEN_INSTALL_VERSION}-bin.tar.gz \
