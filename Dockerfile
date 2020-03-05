@@ -18,5 +18,5 @@ RUN cd /tmp \
 RUN groupadd -r -g 900 bamboo-agent \
 	&& useradd -r -m -u 900 -g 900 bamboo-agent
 	
-COPY atlassian-bamboo-agent-installer.jar /root
-CMD java -jar /root/atlassian-bamboo-agent-installer.jar "$BAMBOO_SERVER/agentServer"
+COPY allprojectinfo.xml /root
+CMD java -jar /root/atlassian-bamboo-agent-installer.jar
